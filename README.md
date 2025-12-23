@@ -30,7 +30,8 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<video src="src/assets/intro3.mov" title="Video Walkthrough" width="100%" controls autoplay loop muted></video>
+<video src="src/assets/intro3.mov" title="Video Walkthrough" width="100%" controls autoplay loop muted></video> 
+We have video in the src/assets/intro3.mov
 
 ## Notes
 
