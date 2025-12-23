@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap');
+
+:root {
+  /* Font settings */
+  --pico-font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  --pico-line-height: 1.6;
+  
+  /* Color palette - Deep Space Theme */
+  --pico-background-color: #0a0e14;
+  --pico-color: #ffffff;
+  --pico-primary: #3b82f6; /* Bright blue for accents */
+  --pico-primary-background: #1d4ed8;
+  --pico-primary-hover: #2563eb;
+  --pico-card-background-color: rgba(30, 41, 59, 0.4);
+  --pico-border-color: rgba(255, 255, 255, 0.1);
+  --pico-form-element-background-color: rgba(0, 0, 0, 0.3);
+  
+  /* Custom Variables */
+  --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --neon-glow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('./assets/greg-rakozy-oMpAz-DN-9I-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 16px;
+}
+
+/* Typography Overrides */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+button, [role="button"] {
+  border-radius: 50px; /* Pillow shape for that premium feel */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 2rem;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+button.outline, [role="button"].outline {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+}
+
+button:hover, [role="button"]:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--neon-glow);
+}
+
+/* Card Styling */
+article {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  border-color: var(--pico-primary);
+}
+
+/* Input Styles */
+input, select, textarea {
+  border-radius: 8px !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--pico-primary) !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2) !important;
+}
+
+/* Hero Section Helpers */
+.hero {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+/* Navbar/Header area if needed */
+nav {
+  padding: 1rem 0;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
