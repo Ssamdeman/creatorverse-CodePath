@@ -30,9 +30,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='link-to-your-gif.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with LiceCap
+<video src="src/assets/intro3.mov" title="Video Walkthrough" width="100%" controls autoplay loop muted></video>
 
 ## Notes
 
